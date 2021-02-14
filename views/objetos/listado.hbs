@@ -1,0 +1,23 @@
+<main>
+  <div class="container">
+    <div class="row">
+      {{#each objetosPerdidos}}
+      <div class="col-6">
+        <div class="row">
+          <div class="col-4">
+            <div class="card" style="width: 14rem;">
+              <img src="{{foto}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{titulo}}</h5>
+                <p class="card-text"><b>Descripción: </b>{{descripcion}}</p>
+                <p class="card-text"><b>Dónde se encontró: </b>{{localizacion}}</p>
+                <p class="card-text" ></p><a href="/objetos/detalle/{{_id}}">id:{{_id}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</main>

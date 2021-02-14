@@ -1,0 +1,59 @@
+body {
+  background-image: url("https://blog.taranna.com/docs/preparar-maleta-viaje-taranna-001-620x414.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 9999;
+}
+
+header nav {
+  background-color: rgba(43, 40, 40, 0.4);
+  border-bottom: 5px solid #080702;
+}
+
+header a, header a:hover {
+  color: #F3D94E;
+  margin-left: 10px;
+}
+
+main {
+  padding-top: 20px;
+  font-size: xx-large;
+  margin-top: 150px;
+}
+
+main .container {
+  background: rgba(206, 202, 201, 0.5);
+  min-height: 500px;
+}
+
+main .container .row {
+  font-size: large;
+  min-height: 16px;
+}
+
+main .container .row div[class^='col-'] {
+  min-height: 100px;
+  padding: 10px;
+}
+
+main .container .row input {
+  margin: 2px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: rgba(43, 40, 40, 0.4);
+  color: #fff;
+  border-top: 5px solid #070602;
+  padding: 10px;
+  text-align: center;
+}

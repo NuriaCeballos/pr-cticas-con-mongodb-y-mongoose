@@ -1,0 +1,25 @@
+  <!-- CUERPO DEL EJERCICIO -->
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex resultado justify-content-center align-items-center">
+          <form method="post" action="/objetos/guardar" style="display:grid" enctype="multipart/form-data">
+            Registro de objeto olvidado:
+            <input name="nombre" id="nombre" placeholder="nombre">
+            <input name="telefono" id="telefono" placeholder="teléfono">
+            <input name="titulo" id="titulo" placeholder="título">
+            <input name="descripcion" id="descripcion" placeholder="descripción">
+            <input name="localizacion" id="localizacion" placeholder="dónde se encontró">
+            <input type="file" name="foto" id="foto">
+            <input type="submit" class="btn btn-warning" value="Guardar">
+          </form>
+        </div>
+        <div class="col-12">
+          {{#if mensaje}}
+            <div class="alert alert-success" role="alert">
+              {{mensaje}}
+            </div>
+          {{/if}}
+        </div>
+    </div>
+  </main>
